@@ -1,0 +1,1 @@
+start /d "C:\Fast-Installer" storeMicrosoft.msixbundle
