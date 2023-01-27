@@ -1,7 +1,5 @@
 echo.
 Echo Se comienza a instalar Actualizacion de Microsoft Store ...
-::start /d "C:\Fast-Installer\Fast-Installer" storeMicrosoft.msixbundle
-::La siguiente linea deb arriba debe de remplazarse con la de abajo para entregable final
 start /d "C:\Fast-Installer" Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
 pause
 echo.
@@ -19,7 +17,7 @@ call 7zip.bat
 echo.
 Echo Se comienza a instalar SLACK ...
 pause
-call slack.
+call slack.exe
 echo.
 Echo Se comienza a instalar ADOBE...
 pause
@@ -27,7 +25,7 @@ call Adobe.bat
 echo.
 Echo Se comienza a Instalar BITDEFENDER ...
 pause
-start /d "C:\Fast-Installer" antivirusBD.exe
+start /d "C:\Fast-Installer" setupdownloader_[aHR0cHM6Ly9jbG91ZC1lY3MuZ3Jhdml0eXpvbmUuYml0ZGVmZW5kZXIuY29tL1BhY2thZ2VzL0JTVFdJTi8wL0pSYnNlUC9pbnN0YWxsZXIueG1sP2xhbmc9ZXMtRVM=].exe
 echo.
 Echo Se comienza a instalar AGENTE ...
 call  agente.bat
