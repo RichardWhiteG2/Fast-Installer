@@ -18,9 +18,10 @@ pause
 cls 
 call completa.bat
 :Individual
+Echo Comienza instalacion INDIVIDUAL ...
+pause
 cls 
-color 1a
-Echo Seleccione que programa instalar
-Echo Precione una tecla para volver al menu
+call individual.bat
+
 Pause>Nul
 goto :Menu
