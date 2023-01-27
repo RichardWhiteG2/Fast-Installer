@@ -89,7 +89,7 @@ goto :AgenteMenu
 :Store
 echo.
 Echo Se comienza a instalar Actualizacion de Microsoft Store ...
-start /d "C:\Fast-Installer" storeMicrosoft.msixbundle
+start /d "C:\Fast-Installer" Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
 Pause
 echo.
 Echo .:: *** La instalacion ha terminado *** ::.
