@@ -6,6 +6,7 @@ echo.
 echo 1. Primera Opcion
 echo 2. Segunda Opcion
 echo 3. Salir
+::Esto es un comentario
 set /p var=
 if %var%==1 goto :Primero
 if %var%==2 goto :Segundo
