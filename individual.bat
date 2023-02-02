@@ -11,7 +11,8 @@ echo 5. Adobe
 echo 6. BitDefender
 echo 7. Agente
 echo 8. Actualizacion de Microsoft Store
-echo 9. Regresar 
+echo 9. Impresora 
+echo 0. Regresar 
 set /p var=
 if %var%==1 goto :Chrome
 if %var%==2 goto :Drive
@@ -21,7 +22,8 @@ if %var%==5 goto :Adobe
 if %var%==6 goto :BD
 if %var%==7 goto :Agente
 if %var%==8 goto :Store
-if %var%==9 goto :Regresar
+if %var%==9 goto :Impresora
+if %var%==0 goto :Regresar
 if %var% GTR 3 echo Error
 goto call CONFIGURACION.bat
 :Chrome
@@ -90,6 +92,15 @@ goto :AgenteMenu
 echo.
 Echo Se comienza a instalar Actualizacion de Microsoft Store ...
 start /d "C:\Fast-Installer" Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+Pause
+echo.
+Echo .:: *** La instalacion ha terminado *** ::.
+pause
+goto :AgenteMenu
+:Impresora
+echo.
+Echo Se comienza a instalar IMPRESORA ...
+start /d "C:\Fast-Installer" Printer_Window.exe
 Pause
 echo.
 Echo .:: *** La instalacion ha terminado *** ::.

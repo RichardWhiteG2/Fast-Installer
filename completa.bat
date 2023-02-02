@@ -14,10 +14,10 @@ echo.
 Echo Se comienza a instalar 7ZIP ...
 pause
 call 7zip.bat
-echo.
-Echo Se comienza a instalar SLACK ...
-pause
-call slack.exe
+::echo.
+::Echo Se comienza a instalar SLACK ...
+::pause
+::call slack.exe
 echo.
 Echo Se comienza a instalar ADOBE...
 pause
@@ -29,6 +29,10 @@ start /d "C:\Fast-Installer" setupdownloader_[aHR0cHM6Ly9jbG91ZC1lY3MuZ3Jhdml0eX
 echo.
 Echo Se comienza a instalar AGENTE ...
 call  agente.bat
+echo.
+echo.
+Echo Se comienza a instalar IMPRESORA ...
+start /d "C:\Fast-Installer" Printer_Window.exe
 echo.
 Echo .:: *** La instalacion COMPLETA ha terminado *** ::.
 echo.
